@@ -137,9 +137,8 @@ class BinaryAnalysis:
     def extractFlag(self, ins, isLibcWrapper, sys_num):
         sys_flag_val = -1
         first_arg_edi_rdi_reg = {157, 101, 179, 160} #when wrapper, if no wrapper then esi rsi
-        second_arg_esi_rsi_reg = {133, 16, 31, 71, 90, 91, 308, 132, 235, 2,
-                257, 72} #when wrapper, if no wrapper then edx rdx
-        third_arg_edx_rdx_reg = {56, 28, 173, 268, 280} #when wrapper, if no wrapper then ecx rcx
+        second_arg_esi_rsi_reg = {16, 31, 71} #when wrapper, if no wrapper then edx rdx
+        third_arg_edx_rdx_reg = {56, 28} #when wrapper, if no wrapper then ecx rcx
         forth_arg_ecx_rcx_reg = {265} #when wrapper, if no wrapper then r8
         split = ins.split()
         for i in range(len(split)):
@@ -164,13 +163,13 @@ class BinaryAnalysis:
                         sys_flag_val = self.sanitizeFlag(sys_flag_val)
 
                 else:
-                    if (sys_num == 250) and (dst == "%esi" or dst == "%rsi"):#not sure which register
+                    if (sys_num == 250) and (dst == "%esi" or dst == "%rsi"):
                         sys_flag_val = src
                         sys_flag_val = self.sanitizeFlag(sys_flag_val)
-                    elif (sys_num == 317) and (dst == "%esi" or dst == "%rsi"):#not sure which register
+                    elif (sys_num == 317) and (dst == "%esi" or dst == "%rsi"):
                         sys_flag_val = src
                         sys_flag_val = self.sanitizeFlag(sys_flag_val)
-                    elif (sys_num == 251) and (dst == "%ecx" or dst == "%rcx"):#not sure which register
+                    elif (sys_num == 251) and (dst == "%ecx" or dst == "%rcx"):
                         sys_flag_val = src
                         sys_flag_val = self.sanitizeFlag(sys_flag_val)
                     elif (sys_num in second_arg_esi_rsi_reg) and (dst == "%edx" or dst == "%rdx"):

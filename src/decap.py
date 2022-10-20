@@ -63,6 +63,5 @@ if __name__ == '__main__':
             rootLogger.info("----------------------------------------------------------------\n")
             
             
-        print(CapStat)
         CapStat.to_csv('Output_Stat.csv')
 
