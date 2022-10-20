@@ -1,0 +1,33 @@
+{
+    "nginx": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/nginx"
+    },
+    "passwd": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/passwd"
+    },
+    "ping": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/ping"
+    },
+    "dmcrypt-get-device": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/dmcrypt-get-device"
+    },
+    "lpr": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/lpr"
+    },
+    "exim4": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/exim4"
+    },
+    "unix_chkpwd": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/unix_chkpwd"
+    },
+    "tcpdump": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/tcpdump"
+    },
+    "httpd": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/httpd"
+    },
+    "lighttpd": {
+        "binary-path": "/home/mehedi/test/packageinstall/out/setuidBinary/lighttpd"
+    }
+
+}

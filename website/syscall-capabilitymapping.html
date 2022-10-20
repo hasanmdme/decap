@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<title>syscall-capability-mapping</title>
+
+	<style>
+
+body {
+  padding:0; 
+  margin:0; 
+  background-color:white;
+  border-width:0px;
+  top: 0px;
+  text-align: center;}	
+svg {
+    font: 11px sans-serif;
+	border: 1px solid #ccc;
+	border-top: none;
+
+}
+
+text {
+	
+    pointer-events: all;
+}
+
+.inner_node rect {
+	fill: black;
+    stroke: white;
+	background-color: black;
+    pointer-events: all;
+	
+}
+
+.inner_node rect.highlight {
+	fill: #3498db;
+    stroke: #fafafa;
+    stroke-width: 2px;
+}
+
+.outer_node circle {
+    fill: rgb(84, 82, 82);
+    stroke: rgb(14, 14, 14);
+    stroke-width: 1.5px;
+    pointer-events: all;
+}
+
+.outer_node circle.highlight
+{
+    stroke: #3498db;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+}
+
+
+.projects{
+	max-width: 75em;
+	margin-bottom: 0px !important;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	
+}
+.center {
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	font-size: 17px;
+    display: flex;
+    justify-content: center;
+    max-width: 1050px;
+    margin: auto;
+}
+
+div {
+  	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+h1 { 
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    max-width: 75em;
+}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="center">
+		<h1> 
+			Capability-System call Mapping
+		</h1>
+	</div>
+	<div>
+		<script src="https://d3js.org/d3.v3.min.js"charset="utf-8"></script>
+		<script src="https://hasanmdme.github.io/decap/website/mapping.js"></script>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

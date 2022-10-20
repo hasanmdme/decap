@@ -1,0 +1,605 @@
+{
+    "dbus-daemon-launch-helper": {
+        "binary-path": "./setuidBinary/dbus-daemon-launch-helper"
+    },
+    "arping": {
+        "binary-path": "./setuidBinary/arping"
+    },
+    "pkexec": {
+        "binary-path": "./setuidBinary/pkexec"
+    },
+    "dmcrypt-get-device": {
+        "binary-path": "./setuidBinary/dmcrypt-get-device"
+    },
+    "Xorg.wrap": {
+        "binary-path": "./setuidBinary/Xorg.wrap"
+    },
+    "polkit-agent-helper-1": {
+        "binary-path": "./setuidBinary/polkit-agent-helper-1"
+    },
+    "pppd": {
+        "binary-path": "./setuidBinary/pppd"
+    },
+    "fusermount": {
+        "binary-path": "./setuidBinary/fusermount"
+    },
+    "start_kdeinit": {
+        "binary-path": "./setuidBinary/start_kdeinit"
+    },
+    "sudo": {
+        "binary-path": "./setuidBinary/sudo"
+    },
+    "at": {
+        "binary-path": "./setuidBinary/at"
+    },
+    "userhelper": {
+        "binary-path": "./setuidBinary/userhelper"
+    },
+    "inetutils-traceroute": {
+        "binary-path": "./setuidBinary/inetutils-traceroute"
+    },
+    "procmail": {
+        "binary-path": "./setuidBinary/procmail"
+    },
+    "pwauth": {
+        "binary-path": "./setuidBinary/pwauth"
+    },
+    "mount.nfs": {
+        "binary-path": "./setuidBinary/mount.nfs"
+    },
+    "ping": {
+        "binary-path": "./setuidBinary/ping"
+    },
+    "dma-mbox-create": {
+        "binary-path": "./setuidBinary/dma-mbox-create"
+    },
+    "v4l-conf": {
+        "binary-path": "./setuidBinary/v4l-conf"
+    },
+    "ping6": {
+        "binary-path": "./setuidBinary/ping6"
+    },
+    "exim4": {
+        "binary-path": "./setuidBinary/exim4"
+    },
+    "snap-confine": {
+        "binary-path": "./setuidBinary/snap-confine"
+    },
+    "spice-client-glib-usb-acl-helper": {
+        "binary-path": "./setuidBinary/spice-client-glib-usb-acl-helper"
+    },
+    "qmail-queue": {
+        "binary-path": "./setuidBinary/qmail-queue"
+    },
+    "schroot": {
+        "binary-path": "./setuidBinary/schroot"
+    },
+    "helper": {
+        "binary-path": "./setuidBinary/helper"
+    },
+    "pumount": {
+        "binary-path": "./setuidBinary/pumount"
+    },
+    "pmount": {
+        "binary-path": "./setuidBinary/pmount"
+    },
+    "start-suid": {
+        "binary-path": "./setuidBinary/start-suid"
+    },
+    "mount-suid": {
+        "binary-path": "./setuidBinary/mount-suid"
+    },
+    "action-suid": {
+        "binary-path": "./setuidBinary/action-suid"
+    },
+    "uux": {
+        "binary-path": "./setuidBinary/uux"
+    },
+    "uustat": {
+        "binary-path": "./setuidBinary/uustat"
+    },
+    "uucp": {
+        "binary-path": "./setuidBinary/uucp"
+    },
+    "uucico": {
+        "binary-path": "./setuidBinary/uucico"
+    },
+    "uuxqt": {
+        "binary-path": "./setuidBinary/uuxqt"
+    },
+    "oom-adjust-setuid-helper": {
+        "binary-path": "./setuidBinary/oom-adjust-setuid-helper"
+    },
+    "vdr-shutdown.wrapper": {
+        "binary-path": "./setuidBinary/vdr-shutdown.wrapper"
+    },
+    "gtmsecshr": {
+        "binary-path": "./setuidBinary/gtmsecshr"
+    },
+    "beep": {
+        "binary-path": "./setuidBinary/beep"
+    },
+    "newgidmap": {
+        "binary-path": "./setuidBinary/newgidmap"
+    },
+    "newuidmap": {
+        "binary-path": "./setuidBinary/newuidmap"
+    },
+    "lxc-user-nic": {
+        "binary-path": "./setuidBinary/lxc-user-nic"
+    },
+    "mount.cifs": {
+        "binary-path": "./setuidBinary/mount.cifs"
+    },
+    "rsh-redone-rlogin": {
+        "binary-path": "./setuidBinary/rsh-redone-rlogin"
+    },
+    "rsh-redone-rsh": {
+        "binary-path": "./setuidBinary/rsh-redone-rsh"
+    },
+    "sensible-mda": {
+        "binary-path": "./setuidBinary/sensible-mda"
+    },
+    "lprm": {
+        "binary-path": "./setuidBinary/lprm"
+    },
+    "lpq": {
+        "binary-path": "./setuidBinary/lpq"
+    },
+    "lpr": {
+        "binary-path": "./setuidBinary/lpr"
+    },
+    "krb5_child": {
+        "binary-path": "./setuidBinary/krb5_child"
+    },
+    "ldap_child": {
+        "binary-path": "./setuidBinary/ldap_child"
+    },
+    "p11_child": {
+        "binary-path": "./setuidBinary/p11_child"
+    },
+    "proxy_child": {
+        "binary-path": "./setuidBinary/proxy_child"
+    },
+    "selinux_child": {
+        "binary-path": "./setuidBinary/selinux_child"
+    },
+    "s-nail-privsep": {
+        "binary-path": "./setuidBinary/s-nail-privsep"
+    },
+    "ksu": {
+        "binary-path": "./setuidBinary/ksu"
+    },
+    "oping": {
+        "binary-path": "./setuidBinary/oping"
+    },
+    "noping": {
+        "binary-path": "./setuidBinary/noping"
+    },
+    "unix_chkpwd": {
+        "binary-path": "./setuidBinary/unix_chkpwd"
+    },
+    "pinger": {
+        "binary-path": "./setuidBinary/pinger"
+    },
+    "xymonping": {
+        "binary-path": "./setuidBinary/xymonping"
+    },
+    "pam-tmpdir-helper": {
+        "binary-path": "./setuidBinary/pam-tmpdir-helper"
+    },
+    "super": {
+        "binary-path": "./setuidBinary/super"
+    },
+    "mm-meter": {
+        "binary-path": "./setuidBinary/mm-meter"
+    },
+    "mm-webreplay": {
+        "binary-path": "./setuidBinary/mm-webreplay"
+    },
+    "mm-webrecord": {
+        "binary-path": "./setuidBinary/mm-webrecord"
+    },
+    "mm-loss": {
+        "binary-path": "./setuidBinary/mm-loss"
+    },
+    "mm-onoff": {
+        "binary-path": "./setuidBinary/mm-onoff"
+    },
+    "mm-delay": {
+        "binary-path": "./setuidBinary/mm-delay"
+    },
+    "mm-link": {
+        "binary-path": "./setuidBinary/mm-link"
+    },
+    "scamper": {
+        "binary-path": "./setuidBinary/scamper"
+    },
+    "mgnokiidev": {
+        "binary-path": "./setuidBinary/mgnokiidev"
+    },
+    "libgtk3-nocsd.so.0": {
+        "binary-path": "./setuidBinary/libgtk3-nocsd.so.0"
+    },
+    "clockdiff": {
+        "binary-path": "./setuidBinary/clockdiff"
+    },
+    "chrome-sandbox": {
+        "binary-path": "./setuidBinary/chrome-sandbox"
+    },
+    "mount.ecryptfs_private": {
+        "binary-path": "./setuidBinary/mount.ecryptfs_private"
+    },
+    "tcptraceroute.mt": {
+        "binary-path": "./setuidBinary/tcptraceroute.mt"
+    },
+    "mailq": {
+        "binary-path": "./setuidBinary/mailq"
+    },
+    "nullmailer-queue": {
+        "binary-path": "./setuidBinary/nullmailer-queue"
+    },
+    "rnews": {
+        "binary-path": "./setuidBinary/rnews"
+    },
+    "lbmount": {
+        "binary-path": "./setuidBinary/lbmount"
+    },
+    "sbox": {
+        "binary-path": "./setuidBinary/sbox"
+    },
+    "suexec-custom": {
+        "binary-path": "./setuidBinary/suexec-custom"
+    },
+    "usbauth-npriv": {
+        "binary-path": "./setuidBinary/usbauth-npriv"
+    },
+    "physlock": {
+        "binary-path": "./setuidBinary/physlock"
+    },
+    "traceroute6.iputils": {
+        "binary-path": "./setuidBinary/traceroute6.iputils"
+    },
+    "mtr-packet": {
+        "binary-path": "./setuidBinary/mtr-packet"
+    },
+    "pppoe": {
+        "binary-path": "./setuidBinary/pppoe"
+    },
+    "really": {
+        "binary-path": "./setuidBinary/really"
+    },
+    "uml_net": {
+        "binary-path": "./setuidBinary/uml_net"
+    },
+    "wrap..exec": {
+        "binary-path": "./setuidBinary/wrap..exec"
+    },
+    "wims": {
+        "binary-path": "./setuidBinary/wims"
+    },
+    "enlightenment_sys": {
+        "binary-path": "./setuidBinary/enlightenment_sys"
+    },
+    "freqset": {
+        "binary-path": "./setuidBinary/freqset"
+    },
+    "plymouth": {
+        "binary-path": "./setuidBinary/plymouth"
+    },
+    "usplash": {
+        "binary-path": "./setuidBinary/usplash"
+    },
+    "askpass-fifo": {
+        "binary-path": "./setuidBinary/askpass-fifo"
+    },
+    "splashy": {
+        "binary-path": "./setuidBinary/splashy"
+    },
+    "mandos-client": {
+        "binary-path": "./setuidBinary/mandos-client"
+    },
+    "kismet_capture": {
+        "binary-path": "./setuidBinary/kismet_capture"
+    },
+    "suexec-pristine": {
+        "binary-path": "./setuidBinary/suexec-pristine"
+    },
+    "ifmail": {
+        "binary-path": "./setuidBinary/ifmail"
+    },
+    "inndstart": {
+        "binary-path": "./setuidBinary/inndstart"
+    },
+    "runapp": {
+        "binary-path": "./setuidBinary/runapp"
+    },
+    "amgtar": {
+        "binary-path": "./setuidBinary/amgtar"
+    },
+    "amstar": {
+        "binary-path": "./setuidBinary/amstar"
+    },
+    "rundump": {
+        "binary-path": "./setuidBinary/rundump"
+    },
+    "runtar": {
+        "binary-path": "./setuidBinary/runtar"
+    },
+    "calcsize": {
+        "binary-path": "./setuidBinary/calcsize"
+    },
+    "killpgrp": {
+        "binary-path": "./setuidBinary/killpgrp"
+    },
+    "i810switch": {
+        "binary-path": "./setuidBinary/i810switch"
+    },
+    "blinklight-fixperm": {
+        "binary-path": "./setuidBinary/blinklight-fixperm"
+    },
+    "telnetlogin": {
+        "binary-path": "./setuidBinary/telnetlogin"
+    },
+    "resolvconf-admin": {
+        "binary-path": "./setuidBinary/resolvconf-admin"
+    },
+    "nvidia-modprobe": {
+        "binary-path": "./setuidBinary/nvidia-modprobe"
+    },
+    "cryptmount": {
+        "binary-path": "./setuidBinary/cryptmount"
+    },
+    "ndisc6": {
+        "binary-path": "./setuidBinary/ndisc6"
+    },
+    "rltraceroute6": {
+        "binary-path": "./setuidBinary/rltraceroute6"
+    },
+    "rdisc6": {
+        "binary-path": "./setuidBinary/rdisc6"
+    },
+    "oarresume": {
+        "binary-path": "./setuidBinary/oarresume"
+    },
+    "oarsh": {
+        "binary-path": "./setuidBinary/oarsh"
+    },
+    "oarnodes": {
+        "binary-path": "./setuidBinary/oarnodes"
+    },
+    "oardel": {
+        "binary-path": "./setuidBinary/oardel"
+    },
+    "oarstat": {
+        "binary-path": "./setuidBinary/oarstat"
+    },
+    "oarsub": {
+        "binary-path": "./setuidBinary/oarsub"
+    },
+    "oarhold": {
+        "binary-path": "./setuidBinary/oarhold"
+    },
+    "oardodo": {
+        "binary-path": "./setuidBinary/oardodo"
+    },
+    "oarnodesetting": {
+        "binary-path": "./setuidBinary/oarnodesetting"
+    },
+    "staprun": {
+        "binary-path": "./setuidBinary/staprun"
+    },
+    "italc_auth_helper": {
+        "binary-path": "./setuidBinary/italc_auth_helper"
+    },
+    "udevil": {
+        "binary-path": "./setuidBinary/udevil"
+    },
+    "cockpit-session": {
+        "binary-path": "./setuidBinary/cockpit-session"
+    },
+    "firejail": {
+        "binary-path": "./setuidBinary/firejail"
+    },
+    "linux-user-chroot": {
+        "binary-path": "./setuidBinary/linux-user-chroot"
+    },
+    "innbind": {
+        "binary-path": "./setuidBinary/innbind"
+    },
+    "ambind": {
+        "binary-path": "./setuidBinary/ambind"
+    },
+    "idhash": {
+        "binary-path": "./setuidBinary/idhash"
+    },
+    "senddigest": {
+        "binary-path": "./setuidBinary/senddigest"
+    },
+    "multigram": {
+        "binary-path": "./setuidBinary/multigram"
+    },
+    "choplist": {
+        "binary-path": "./setuidBinary/choplist"
+    },
+    "flist": {
+        "binary-path": "./setuidBinary/flist"
+    },
+    "index.cgi": {
+        "binary-path": "./setuidBinary/index.cgi"
+    },
+    "add": {
+        "binary-path": "./setuidBinary/add"
+    },
+    "hashquery": {
+        "binary-path": "./setuidBinary/hashquery"
+    },
+    "gpgwww": {
+        "binary-path": "./setuidBinary/gpgwww"
+    },
+    "lookup": {
+        "binary-path": "./setuidBinary/lookup"
+    },
+    "faxq-helper": {
+        "binary-path": "./setuidBinary/faxq-helper"
+    },
+    "switchsh": {
+        "binary-path": "./setuidBinary/switchsh"
+    },
+    "masqmail": {
+        "binary-path": "./setuidBinary/masqmail"
+    },
+    "9bind": {
+        "binary-path": "./setuidBinary/9bind"
+    },
+    "9mount": {
+        "binary-path": "./setuidBinary/9mount"
+    },
+    "9umount": {
+        "binary-path": "./setuidBinary/9umount"
+    },
+    "userv": {
+        "binary-path": "./setuidBinary/userv"
+    },
+    "zapping_setup_fb": {
+        "binary-path": "./setuidBinary/zapping_setup_fb"
+    },
+    "mesg": {
+        "binary-path": "./setuidBinary/mesg"
+    },
+    "orville-write": {
+        "binary-path": "./setuidBinary/orville-write"
+    },
+    "login_duo": {
+        "binary-path": "./setuidBinary/login_duo"
+    },
+    "lldpcli": {
+        "binary-path": "./setuidBinary/lldpcli"
+    },
+    "btcli": {
+        "binary-path": "./setuidBinary/btcli"
+    },
+    "apt-update": {
+        "binary-path": "./setuidBinary/apt-update"
+    },
+    "ccreds_chkpwd": {
+        "binary-path": "./setuidBinary/ccreds_chkpwd"
+    },
+    "uncompress.so": {
+        "binary-path": "./setuidBinary/uncompress.so"
+    },
+    "rush": {
+        "binary-path": "./setuidBinary/rush"
+    },
+    "jazip": {
+        "binary-path": "./setuidBinary/jazip"
+    },
+    "vlock-main": {
+        "binary-path": "./setuidBinary/vlock-main"
+    },
+    "weston-launch": {
+        "binary-path": "./setuidBinary/weston-launch"
+    },
+    "libsdate.so.0.0.1": {
+        "binary-path": "./setuidBinary/libsdate.so.0.0.1"
+    },
+    "VirtualBox": {
+        "binary-path": "./setuidBinary/VirtualBox"
+    },
+    "VBoxSDL": {
+        "binary-path": "./setuidBinary/VBoxSDL"
+    },
+    "VBoxNetAdpCtl": {
+        "binary-path": "./setuidBinary/VBoxNetAdpCtl"
+    },
+    "VBoxNetNAT": {
+        "binary-path": "./setuidBinary/VBoxNetNAT"
+    },
+    "VBoxHeadless": {
+        "binary-path": "./setuidBinary/VBoxHeadless"
+    },
+    "VBoxNetDHCP": {
+        "binary-path": "./setuidBinary/VBoxNetDHCP"
+    },
+    "vmware-user-suid-wrapper": {
+        "binary-path": "./setuidBinary/vmware-user-suid-wrapper"
+    },
+    "netkit-rsh": {
+        "binary-path": "./setuidBinary/netkit-rsh"
+    },
+    "netkit-rcp": {
+        "binary-path": "./setuidBinary/netkit-rcp"
+    },
+    "netkit-rlogin": {
+        "binary-path": "./setuidBinary/netkit-rlogin"
+    },
+    "calife": {
+        "binary-path": "./setuidBinary/calife"
+    },
+    "oar_resources_init": {
+        "binary-path": "./setuidBinary/oar_resources_init"
+    },
+    "oarmonitor": {
+        "binary-path": "./setuidBinary/oarmonitor"
+    },
+    "oaraccounting": {
+        "binary-path": "./setuidBinary/oaraccounting"
+    },
+    "oar_phoenix": {
+        "binary-path": "./setuidBinary/oar_phoenix"
+    },
+    "oarremoveresource": {
+        "binary-path": "./setuidBinary/oarremoveresource"
+    },
+    "Almighty": {
+        "binary-path": "./setuidBinary/Almighty"
+    },
+    "oarnotify": {
+        "binary-path": "./setuidBinary/oarnotify"
+    },
+    "oarproperty": {
+        "binary-path": "./setuidBinary/oarproperty"
+    },
+    "su": {
+        "binary-path": "./setuidBinary/su"
+    },
+    "chsh": {
+        "binary-path": "./setuidBinary/chsh"
+    },
+    "chfn": {
+        "binary-path": "./setuidBinary/chfn"
+    },
+    "ssh-keysign": {
+        "binary-path": "./setuidBinary/ssh-keysign"
+    },
+    "newgrp": {
+        "binary-path": "./setuidBinary/newgrp"
+    },
+    "tcpdump": {
+        "binary-path": "./setuidBinary/tcpdump"
+    },
+    "nginx": {
+        "binary-path": "./setuidBinary/nginx"
+    },
+    "httpd": {
+        "binary-path": "./setuidBinary/httpd"
+    },
+    "lighttpd": {
+        "binary-path": "./setuidBinary/lighttpd"
+    },
+    "mbedtls": {
+        "binary-path": "./setuidBinary/ssl_server2"
+    },
+    "mariadbd": {
+        "binary-path": "./setuidBinary/mariadbd"
+    },
+    "mount": {
+        "binary-path": "./setuidBinary/mount"
+    },
+    "umount": {
+        "binary-path": "./setuidBinary/umount"
+    },
+    "passwd": {
+        "binary-path": "./setuidBinary/passwd"
+    }
+}

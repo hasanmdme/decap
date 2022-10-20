@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  
+  <title>Decap Tutorial</title>
+
+<link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-1.8.0.min.css" />
+<link rel="stylesheet" href="https://hasanmdme.github.io/decap/website/style.css" /
+</head>
+<body>
+<div class="page-wrap">
+<h1>Decap Step by Step Guide</h1>
+<p>
+In this page we will walk through the steps required to generate a capability
+profile for the ping application.
+</p>
+
+<div class="tab">
+    <h3>Prerequisites</h3>
+</div>
+
+<div id="Exercise0" class="tabcontent">
+
+  
+	<p>Decap is mainly developed in python. You will need to install the python version 3.</p>
+	<pre>
+	sudo apt update
+	sudo apt install -y python3
+    sudo pip3 install pandas
+	</pre>
+	
+	<span style="font-weight:bold;">As Decap uses sysfilter's system call extraction tool, you have to clone and build the sysfilter extraction tool from  
+	<a href="https://gitlab.com/Egalito/sysfilter">here</a>. While running decap, you have to give the path of sysfilter_extract executable as a flag value.
+	</span>
+	<br/>
+	
+	  <h4>System Validation</h4>
+          <p>Now we will check that we are running the correct
+            kernel version required for completing the hands-on exercise. We tested Decap on Ubuntu 18.04 with kernel v5.4</p>
+          <pre><span class="tryit_run">uname --kernel-release</span></pre>
+          <p>This should print the kernel version which should be as follows:</p>
+          <pre class="tryit_output">5.4.0-48-lowlatency</pre>
+        <p>It is critical that you see the correct Linux kernel version. </p>
+		<br/>
+	   <p>We can check the Ubuntu distribution using this command:</p>
+          <pre><span class="tryit_run">cat /etc/issue</span></pre>
+          <p>This should print the Ubuntu version which should be as follows:</p>
+          <pre class="tryit_output">Ubuntu 18.04.5 LTS \n \l</pre>
+        <br/>
+</div>
+	
+<div class="tab">
+<h3>Working with Decap</h3>
+</div>
+<div id="Exercise1" class="tabcontent">
+	<h4>Working with Decap</h4>
+          <p>1. Check where is binary ping</p>
+          <pre><span class="tryit_run">whereis -b ping</span></pre>
+          <p>This should print the path of the binary like this:</p>
+          <pre class="tryit_output">ping: /bin/ping</pre>
+          
+	  <p>2. Switch to the `src` directory.</p>
+		<pre><span class="tryit_run">cd src</span></pre>
+	
+	  <p>3. Open a new file, name it as you like. We will use myexample.json in the following examples.</p>
+		<pre><span class="tryit_run">vim myexample.json</span></pre>
+	
+	<p>4. Copy the following text into the file and update the binary-path value from step 1.</p>
+<pre>
+{
+    "ping": {
+    	"binary-path": "/bin/ping"
+	}
+}   	
+</pre>
+	  <p> 5. Now run Decap:</p>
+          <pre><span class="tryit_run">sudo python3 decap.py --input [full-path-of-myexample.json] --sysfilterpath [full-path-of-sysfilter_extraction-executable]</span></pre>
+          <p>The script will now start analyzing the binary for the required capability.</p>
+          <pre class="tryit_output">Starting analysis for binary: ping ...
+	  </pre>
+	
+	<p>System call extraction and argument analysis phase</p>
+          <pre class="tryit_output">Starting system call extraction ...
+          Extracting system calls using Confine and performing argument analysis for the system calls responsible for CAP_SYS_ADMIN ...
+Extracting system calls using Sysfilter ...
+Generating final system call list ...
+... System call extraction done!
+Total number of extracted system calls : 50
+	  </pre>
+	
+	  <p>The script will now start finding the required capability based on extracted system calls.</p>
+          <pre class="tryit_output">Finding required capabilities for the extracted system calls ...
+Checking if CAP_SYS_ADMIN is required based on the argument analysis ...
+... removing CAP_SYS_ADMIN
+Total num of capabilties to add : 16
+Deprivileging setuid binary and enforcing only the required capabilities to the binary
+Done capability analysis for ping!
+----------------------------------------------------------------
+	  </pre>
+	
+<p> 6. Now the analysis is done and we can check the capabilities of the binary</p>
+          <pre><span class="tryit_run">getcap /bin/ping</span></pre>
+          <p>This should print the capabilities added to the binary like this:</p>
+          <pre class="tryit_output">/bin/ping = cap_dac_override,cap_dac_read_search,cap_fowner,cap_kill,cap_setuid,cap_setpcap,cap_linux_immutable,cap_net_bind_service,cap_net_admin,cap_net_raw,cap_ipc_lock,cap_sys_resource,cap_sys_tty_config,cap_lease,cap_audit_control,cap_mac_override+ep</pre>
+        <br/>
+	
+</div>
+
+</div>
+</body>
+</html>

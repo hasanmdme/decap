@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="https://hasanmdme.github.io/decap/website/style.css" / 
+</head>
+
+<body>
+<div class="page-wrap">
+<h1>Capability-System call Mapping</h1>
+
+<p><b>Table 1: The resulting mapping of our effort to identify the system calls that depend on each capability.</b></p>
+<table style="margin-left:auto;margin-right:auto;">
+  <tr>
+    <th align="left">Capability</th>
+    <th align="left">System call(s)</th>
+
+  </tr>
+  <tr>
+    <td>CAP_AUDIT_CONTROL</td>
+    <td>sendto, recv, recvfrom, recvmsg</td>
+  </tr>
+  <tr>
+    <td>CAP_AUDIT_READ</td>
+    <td>bind</td>
+  </tr>
+
+  <tr>
+    <td>CAP_AUDIT_WRITE</td>
+    <td>sendto</td>
+  </tr>
+
+  <tr>
+    <td>CAP_BLOCK_SUSPEND</td>
+    <td>epoll_ctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_ADMIN</td>
+    <td>bpf, perf_event_open, syslog, mount, umount, pivot_root, swapon, swapoff, setdomainname, vm86, setns,
+        fanotify_init, unshare, lookup_dcookie, io_submit, prctl, clone, quotactl, msgctl, setrlimit, shmctl, ioprio_set, keyctl, madvise, ioctl, seccomp, ptrace, sethostname</td>
+  </tr>
+
+  <tr>
+    <td>CAP_BPF</td>
+    <td>bpf</td>
+  </tr>
+
+  <tr>
+    <td>CAP_PERFMON</td>
+    <td>perf_event_open</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYSLOG</td>
+    <td>syslog</td>
+  </tr>
+
+  <tr>
+    <td>CAP_CHECKPOINT_RESTORE</td>
+    <td>clone</td>
+  </tr>
+
+  <tr>
+    <td>CAP_CHOWN</td>
+    <td>chown, fchown, lchown, fchownat</td>
+  </tr>
+
+  <tr>
+    <td>CAP_DAC_READ_SEARCH</td>
+    <td>open, openat, openat2, open_by_handle_at, linkat</td>
+  </tr>
+
+  <tr>
+    <td>CAP_DAC_OVERRIDE</td>
+    <td>utime, utimensat, utimes, open, openat, openat2</td>
+  </tr>
+
+  <tr>
+    <td>CAP_FOWNER</td>
+    <td>chmod, fchmod, fchmodat, utime, utimes, utimensat, unlink, unlinkat, open, openat, openat2, fcntl, rename, renameat, renameat2, rmdir, ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_LEASE</td>
+    <td>fcntl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_FSETID</td>
+    <td>chmod, fchmod, fchmodat</td>
+  </tr>
+
+  <tr>
+    <td>CAP_IPC_LOCK</td>
+    <td>mlock, mlock2, mlockall, mmap, memfd_create</td>
+  </tr>
+
+  <tr>
+    <td>CAP_IPC_OWNER</td>
+    <td>msgrcv, msgsnd, semop, semtimedop, shmat, shmdt, msgctl, msgget, shmctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_KILL</td>
+    <td>kill, ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_LINUX_IMMUTABLE</td>
+    <td>ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_MAC_ADMIN</td>
+    <td>setxattr, lsetxattr, fsetxattr</td>
+  </tr>
+
+  <tr>
+    <td>CAP_MAC_OVERRIDE</td>
+    <td>socket</td>
+  </tr>
+
+  <tr>
+    <td>CAP_MKNOD</td>
+    <td>mknod, mknodat, renameat2</td>
+  </tr>
+
+  <tr>
+    <td>CAP_NET_ADMIN</td>
+    <td>setsockopt, ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_NET_BIND_SERVICE</td>
+    <td>bind</td>
+  </tr>
+
+  <tr>
+    <td>CAP_NET_BROADCAST</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>CAP_NET_RAW</td>
+    <td>socket</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SETGID</td>
+    <td>setgroups, setfsgid, setgid, setregid, setresgid</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SETFCAP</td>
+    <td>clone</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SETPCAP</td>
+    <td>capset, prctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SETUID</td>
+    <td>setuid, setreuid, setresuid, setfsuid, keyctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_BOOT</td>
+    <td>reboot, kexec_file_load, kexec_load</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_CHROOT</td>
+    <td>chroot, setns</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_MODULE</td>
+    <td>finit_module, init_module, create_module, delete_module</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_NICE</td>
+    <td>sched_setscheduler, sched_setparam, sched_setattr, migrate_pages, setpriority, sched_setaffinity, nice, ioprio_set, move_pages, spu_create, mbind</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_PACCT</td>
+    <td>acct</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_PTRACE</td>
+    <td>ptrace, userfaultfd, kcmp, set_robust_list,
+        process_vm_readv, process_vm_writev</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_RAWIO</td>
+    <td>iopl, ioperm</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_RESOURCE</td>
+    <td>send, sendto, sendmsg, prctl, msgctl, setrlimit, fcntl, prlimit, mq_open, ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_TIME</td>
+    <td>settimeofday, stime, adjtimex, clock_adjtime, ntp_adjtime</td>
+  </tr>
+
+  <tr>
+    <td>CAP_SYS_TTY_CONFIG</td>
+    <td>vhangup, ioctl</td>
+  </tr>
+
+  <tr>
+    <td>CAP_WAKE_ALARM</td>
+    <td>timer_create, timerfd_create</td>
+  </tr>
+</table>
+<br />
+<p align="left"><b>Table 2: System calls that conditionally depend on CAP_SYS_ADMIN according to certain values of the high-lighted arguments.</b></p>
+
+<!--table style="width:50%"-->
+<table style="margin-left:auto;margin-right:auto;">
+    <tr>
+      <th align="left">System calls</th>
+    </tr>
+    <tr>
+      <td>int clone(int (*fn)(void *), void *child_stack, int <b>flags</b>, void *arg,
+        ... /* pid_t *ptid, struct user_desc *tls, pid_t *ctid */);</td>
+    </tr>
+
+    <tr>
+        <td>int prctl(int <b>option</b>, unsigned long <b>arg2</b>, unsigned long
+            arg3, unsigned long arg4, unsigned long arg5);</td>
+    </tr>
+
+    <tr>
+        <td>int quotactl(int <b>cmd</b>, const char *special, int id, caddr_t addr);</td>
+    </tr>
+
+    <tr>
+        <td>int msgctl(int msqid, int <b>cmd</b>, struct msqid_ds *buf);</td>
+    </tr>
+
+    <tr>
+        <td>int setrlimit(int <b>resource</b>, const struct rlimit *rlim);</td>
+    </tr>
+
+    <tr>
+        <td>int shmctl(int shmid, int <b>cmd</b>, struct shmid_ds *buf);</td>
+    </tr>
+
+    <tr>
+        <td>int syscall(SYS_ioprio_set, int which, int who, int <b>ioprio</b>);</td>
+    </tr>
+
+    <tr>
+        <td>long syscall(SYS_keyctl, int <b>operation</b>, unsigned long arg2,
+            unsigned long arg3, unsigned long arg4, unsigned long arg5);</td>
+    </tr>
+
+    <tr>
+        <td>int madvise(void *addr, size_t length, int <b>advice</b>);</td>
+    </tr>
+
+    <tr>
+        <td>int ioctl(int fd, unsigned long <b>request</b>, ...);</td>
+    </tr>
+
+    <tr>
+        <td>int syscall(SYS_seccomp, unsigned int <b>operation</b>, unsigned
+            int flags, void *args);</td>
+    </tr>
+
+    <tr>
+        <td>long ptrace(enum __ptrace_request <b>request</b>, pid_t pid,void *addr, void *<b>data</b>); </td>
+    </tr>
+</table>
+  <br />
+  <br />
+    </div>
+</body>
+</html>
