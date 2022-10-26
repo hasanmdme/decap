@@ -11,7 +11,14 @@
 <div class="page-wrap">
 <h1>Capability-System call Mapping</h1>
 
-<p><b>Table 1: The resulting mapping of our effort to identify the system calls that depend on each capability.</b></p>
+<p>As of Linux Kernel v5.17, 41 capabilities have been introduced. Our
+mapping includes 126 system calls, which depend on at least one of the 41
+available capabilities to perform some privileged operation. Visual
+representation of this mapping is also available
+<a href="https://hasanmdme.github.io/decap/website/syscall-capabilitymapping.html">here</a>.
+</p>
+
+<p><b>The resulting mapping of our effort to identify the system calls that depend on each capability.</b></p>
 <table style="margin-left:auto;margin-right:auto;">
   <tr>
     <th align="left">Capability</th>
@@ -225,7 +232,7 @@
   </tr>
 </table>
 <br />
-<p align="left"><b>Table 2: System calls that conditionally depend on CAP_SYS_ADMIN according to certain values of the high-lighted arguments.</b></p>
+<p align="left"><b>System calls that conditionally depend on CAP_SYS_ADMIN according to certain values of the highlighted arguments.</b></p>
 
 <!--table style="width:50%"-->
 <table style="margin-left:auto;margin-right:auto;">
